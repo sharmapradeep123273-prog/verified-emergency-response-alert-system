@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>VERAS — Verified Emergency Response & Alert System</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Arial,sans-serif;background:#f5f7fb;color:#172033}.page{min-height:100vh}.hidden{display:none!important}.login-page{display:grid;place-items:center;padding:24px;background:radial-gradient(circle at top right,#dbeafe,transparent 35%),#f5f7fb}.login-card{width:min(440px,100%);background:#fff;border:1px solid #e6eaf1;border-radius:24px;padding:32px;box-shadow:0 20px 60px #1e293b12}.brand{display:flex;gap:13px;align-items:center;margin-bottom:28px}.brand-icon{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;background:#d71920;color:#fff;font-weight:900;font-size:22px}.brand h1{margin:0;font-size:25px}.brand p{margin:3px 0 0;color:#687386;font-size:12px}.brand.small{margin:0}.brand.small .brand-icon{width:38px;height:38px;border-radius:11px}.brand.small b{display:block;font-size:18px}.brand.small span{font-size:11px;color:#8490a2}.login-card h2{margin:0 0 5px;font-size:27px}.muted{color:#718096}.login-card label,.profile-card label{display:block;font-weight:700;font-size:13px;margin:16px 0}.login-card input,.profile-card input,.profile-card textarea{width:100%;margin-top:7px;padding:12px 13px;border:1px solid #dbe1ea;border-radius:11px;outline:0;font:inherit;background:#fff}.profile-card textarea{min-height:85px;resize:vertical}.login-card input:focus,.profile-card input:focus,.profile-card textarea:focus{border-color:#2563eb;box-shadow:0 0 0 3px #2563eb12}.btn{border:0;border-radius:10px;padding:11px 16px;font-weight:800;cursor:pointer;font:inherit}.primary{background:#d71920;color:white}.secondary{background:#eaf1ff;color:#174ea6}.ghost{background:#eef1f6;color:#334155}.full{width:100%;margin-top:8px}.demo,.notice{font-size:12px;color:#697586;margin-top:16px}.notice{padding:10px;background:#fff7ed;border-radius:9px;color:#9a3412}.topbar{height:72px;background:#fff;border-bottom:1px solid #e7ebf1;padding:0 5%;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:10}.user-menu{display:flex;gap:12px;align-items:center;font-weight:800}.container{width:min(1180px,92%);margin:30px auto}.hero{display:flex;justify-content:space-between;gap:20px;align-items:center;margin-bottom:22px}.eyebrow{font-size:11px;letter-spacing:1.5px;color:#d71920;font-weight:900}.hero h1{font-size:clamp(27px,4vw,44px);margin:8px 0}.hero p{color:#647084;max-width:700px}.status-card{background:#fff;border:1px solid #e5e9f0;border-radius:12px;padding:12px 16px;white-space:nowrap;font-size:13px}.dot{display:inline-block;width:9px;height:9px;border-radius:50%;background:#94a3b8;margin-right:7px}.grid.two{display:grid;grid-template-columns:2fr 1fr;gap:18px}.card{background:#fff;border:1px solid #e5e9f0;border-radius:18px;padding:22px;margin-bottom:18px;box-shadow:0 8px 30px #1e293b08}.section-head{display:flex;justify-content:space-between;gap:15px;align-items:flex-start;margin-bottom:18px}.section-head h2{margin:0 0 4px;font-size:19px}.section-head p{margin:0;color:#748094;font-size:13px}.badge,.incident-pill{padding:6px 10px;border-radius:999px;font-size:11px;font-weight:900;background:#dcfce7;color:#166534;white-space:nowrap}.badge.neutral{background:#eef2f7;color:#64748b}.badge.danger{background:#fee2e2;color:#b91c1c}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:0 15px}.check{display:flex!important;align-items:center;gap:8px;font-weight:600!important}.check input{width:auto!important;margin:0!important}.location-card{display:flex;flex-direction:column}.location-details{margin-top:14px;padding:13px;border-radius:10px;background:#f7f8fa;color:#64748b;font-size:13px;min-height:70px}.emergency-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:12px}.emergency{border:1px solid #e2e7ef;background:#fff;border-radius:15px;padding:18px 10px;cursor:pointer;text-align:left;transition:.2s}.emergency:hover{transform:translateY(-3px);box-shadow:0 10px 25px #1e293b12}.emergency span{font-size:27px}.emergency b,.emergency small{display:block;margin-top:7px}.emergency small{color:#748094}.fire{border-top:4px solid #f97316}.crime{border-top:4px solid #d71920}.accident{border-top:4px solid #2563eb}.medical{border-top:4px solid #16a34a}.other{border-top:4px solid #7c3aed}.report-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.report-item{background:#f7f8fa;border-radius:11px;padding:13px}.report-item small{display:block;color:#7a8495;font-size:11px;margin-bottom:5px}.report-item b{font-size:14px;word-break:break-word}.report-actions{display:flex;gap:9px;margin-top:18px;flex-wrap:wrap}.contacts-list{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.contact{border:1px solid #e4e8ef;border-radius:13px;padding:15px;display:flex;justify-content:space-between;gap:10px;align-items:center}.contact-info b{display:block}.contact-info span{display:block;color:#697586;font-size:12px;margin-top:4px}.contact-actions{display:flex;gap:6px;flex-wrap:wrap}.contact-actions .btn{padding:8px 10px;font-size:12px}.timeline-item{border-left:3px solid #d71920;padding:0 0 14px 14px;margin-left:6px}.timeline-item b{font-size:13px}.timeline-item small{display:block;color:#7a8495;margin-top:3px}.empty{color:#7a8495;font-size:13px}footer{text-align:center;color:#8a94a4;font-size:12px;padding:10px 20px 30px}@media(max-width:850px){.grid.two{grid-template-columns:1fr}.emergency-grid{grid-template-columns:repeat(2,1fr)}.report-grid{grid-template-columns:1fr 1fr}.contacts-list{grid-template-columns:1fr}.hero{display:block}.status-card{display:inline-block;margin-top:10px}}@media(max-width:520px){.container{width:94%}.topbar{padding:0 3%}.user-menu span{display:none}.form-grid,.report-grid{grid-template-columns:1fr}.emergency-grid{grid-template-columns:1fr}.card{padding:16px}.login-card{padding:24px}}
+
+.tabs{display:flex;gap:6px;background:#eef1f6;padding:4px;border-radius:12px;margin-bottom:16px}.tab{flex:1;border:0;background:transparent;padding:10px;border-radius:9px;font:inherit;font-weight:800;color:#64748b;cursor:pointer}.tab.active{background:#fff;color:#d71920;box-shadow:0 2px 8px #1e293b14}.otp-row{display:flex;gap:8px;margin-top:10px}.otp-row .btn{flex:1}.login-card #otpInput{text-align:center;font-size:24px;letter-spacing:8px;font-weight:800}.demo-otp{margin-top:14px;padding:11px;border-radius:9px;background:#eff6ff;color:#1e40af;font-size:13px}.demo-otp b{font-size:18px;letter-spacing:3px}.btn:disabled{opacity:.55;cursor:not-allowed}
+.modal{position:fixed;inset:0;z-index:50;background:#0f172acc;overflow:auto;padding:14px;padding-top:calc(14px + env(safe-area-inset-top,0px));padding-bottom:calc(14px + env(safe-area-inset-bottom,0px))}.sheet{position:relative;width:min(720px,100%);margin:0 auto;background:#fff;border-radius:20px;padding:20px;box-shadow:0 20px 60px #0004}.rd-x{position:absolute;top:12px;right:12px;padding:7px 11px}.rd-head{background:linear-gradient(135deg,#d71920,#9f1239);color:#fff;border-radius:14px;padding:16px;margin:0 0 6px;display:flex;justify-content:space-between;gap:10px;align-items:flex-start}.rd-head span.t{font-size:11px;letter-spacing:1.5px;font-weight:900;opacity:.85}.rd-head h2{margin:6px 0 4px;font-size:26px}.rd-head small{opacity:.9;word-break:break-all}.rd-head .badge{margin-right:34px}#reportDoc h3{margin:20px 0 10px;font-size:15px}.rd-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.rd-row{background:#f7f8fa;border-radius:11px;padding:11px}.rd-row.wide{margin:10px 0}.rd-row small{display:block;color:#7a8495;font-size:11px;margin-bottom:4px}.rd-row b{font-size:14px;word-break:break-word}a.btn{text-decoration:none;display:inline-block;text-align:center}.manual{margin-top:12px;display:flex;flex-direction:column;gap:8px}.manual input{width:100%;padding:11px 12px;border:1px solid #dbe1ea;border-radius:11px;font:inherit}@media(max-width:520px){.rd-grid{grid-template-columns:1fr}.sheet{padding:14px}}
+#fb{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:60;width:min(460px,94%);background:#0f172a;color:#fff;border-radius:16px;padding:16px;box-shadow:0 12px 40px #0006}#fb p{margin:0 0 6px;font-size:12px;opacity:.8}#fb .big{font-size:22px;font-weight:900;word-break:break-all;margin:0 0 12px}#fb .row{display:flex;gap:8px;flex-wrap:wrap}
+
+/* ===== MODERN VERAS UI OVERRIDE ===== */
+:root{--v-red:#d71920;--v-red2:#a80f16;--v-blue:#2563eb;--v-bg:#f4f7fb;--v-card:#fff;--v-text:#172033;--v-muted:#6b778c;--v-border:#e5eaf1;--v-shadow:0 12px 35px rgba(15,23,42,.07)}
+body{background:var(--v-bg);color:var(--v-text)}
+.login-page{background:radial-gradient(circle at 10% 10%,#dbeafe 0,transparent 28%),radial-gradient(circle at 90% 20%,#fee2e2 0,transparent 30%),linear-gradient(135deg,#f8fbff,#eef3f9)}
+.login-card{border-radius:28px;padding:34px;box-shadow:0 24px 70px rgba(15,23,42,.14);border:1px solid #fff}
+.brand-icon{background:linear-gradient(145deg,#ef233c,#a80f16);box-shadow:0 8px 20px #d7192038}
+.btn{border-radius:11px}
+.primary{background:linear-gradient(135deg,#d71920,#a80f16);box-shadow:0 7px 18px #d719202b}
+.secondary{background:#eaf1ff;color:#174ea6}
+.topbar{height:74px;background:#ffffffed;backdrop-filter:blur(14px);border-bottom:1px solid var(--v-border)}
+.container{margin:32px auto}
+.hero{position:relative;overflow:hidden;padding:30px;border-radius:24px;color:#fff;background:linear-gradient(125deg,#111827 0%,#273449 60%,#8f1720 150%);box-shadow:0 24px 60px #0f172a1c}
+.hero:after{content:"";position:absolute;width:260px;height:260px;border-radius:50%;right:-80px;top:-110px;background:#ffffff10}
+.hero>*{position:relative;z-index:1}
+.hero h1{letter-spacing:-1.5px}
+.status-card{background:#ffffff12;border:1px solid #ffffff1c;backdrop-filter:blur(8px)}
+.card{border-radius:20px;box-shadow:var(--v-shadow);border:1px solid var(--v-border)}
+.card:hover{box-shadow:0 15px 40px rgba(15,23,42,.09)}
+.emergency{border-radius:17px;box-shadow:0 3px 12px #0f172a08}
+.emergency:hover{transform:translateY(-4px);box-shadow:0 14px 28px #0f172a1a}
+.location-details,.report-item{background:#f7f9fc;border:1px solid #edf0f5}
+.contact{border-radius:14px;background:#fff}
+.modal{background:#0f172ae8;backdrop-filter:blur(4px)}
+.sheet{border-radius:22px;box-shadow:0 25px 80px #0005}
+.rd-head{background:linear-gradient(135deg,#d71920,#8f1720);box-shadow:0 10px 25px #d7192025}
+#fb{border-radius:17px}
+footer{padding-top:5px}
+@media(max-width:850px){
+ .hero{display:block;padding:24px}.status-card{display:inline-block;margin-top:15px}
+ .grid.two{grid-template-columns:1fr}.emergency-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:520px){
+ .container{width:94%}.topbar{padding:0 3%}.user-menu span{display:none}
+ .form-grid,.report-grid{grid-template-columns:1fr}.emergency-grid{grid-template-columns:1fr}
+ .card{padding:16px}.login-card{padding:24px}.hero h1{font-size:30px}
+}
+
+</style>
+</head>
+<body>
+<div id="toast" class="toast"></div>
+<section id="loginPage" class="page login-page">
+  <div class="login-card">
+    <div class="brand"><div class="brand-icon">V</div><div><h1>VERAS</h1><p>Verified Emergency Response & Alert System</p></div></div>
+    <div class="tabs" id="authTabs"><button type="button" class="tab active" id="tabLogin">Login</button><button type="button" class="tab" id="tabRegister">Register</button></div>
+    <p class="muted" id="authSub"></p>
+    <form id="loginForm">
+      <label>Registered Email or Phone<input id="loginId" required placeholder="you@example.com or 9876543210"></label>
+      <label>Password<input id="loginPassword" type="password" required placeholder="••••••••"></label>
+      <button class="btn primary full" type="submit">Login</button>
+      <button class="btn secondary full" type="button" id="demoBtn">Use Demo Account</button>
+    </form>
+    <form id="registerForm" class="hidden">
+      <label>Full Name<input id="regName" required placeholder="Your name"></label>
+      <label>Phone (10 digits)<input id="regPhone" required inputmode="numeric" placeholder="9876543210"></label>
+      <label>Email<input id="regEmail" type="email" required placeholder="you@example.com"></label>
+      <label>Password (min 6 characters)<input id="regPassword" type="password" required minlength="6" placeholder="••••••••"></label>
+      <button class="btn primary full" type="submit">Register</button>
+    </form>
+    <div id="authMsg" class="notice hidden"></div>
+  </div>
+</section>
+
+<section id="appPage" class="page hidden">
+<header class="topbar"><div class="brand small"><div class="brand-icon">V</div><div><b>VERAS</b><span>Emergency Response</span></div></div><div class="user-menu"><span id="userName">User</span><button class="btn ghost" id="logoutBtn">Logout</button></div></header>
+<main class="container">
+  <div class="hero"><div><span class="eyebrow">● REAL-TIME EMERGENCY ASSISTANCE</span><h1>One tap. One report. Faster response.</h1><p>Create a structured emergency report, attach your location, and quickly contact the appropriate service.</p></div><div class="status-card"><span class="dot"></span><span id="locationStatus">Location not allowed</span></div></div>
+
+  <div class="grid two">
+    <section class="card profile-card"><div class="section-head"><div><h2>Emergency Profile</h2><p>Required information for an incident report.</p></div><span class="badge" id="consentBadge">Consent pending</span></div>
+      <div class="form-grid"><label>Full Name<input id="profileName" placeholder="Your name"></label><label>Phone<input id="profilePhone" placeholder="Phone number"></label><label>Email<input id="profileEmail" type="email" placeholder="Email"></label><label>Emergency Contact<input id="profileContact" placeholder="Phone or email"></label></div>
+      <label>Basic Information<textarea id="profileInfo" placeholder="Allergies, accessibility needs, or other useful information"></textarea></label>
+      <label class="check"><input id="consent" type="checkbox"> I consent to using this information for emergency assistance.</label>
+      <button class="btn secondary" id="saveProfile">Save Profile</button>
+    </section>
+    <section class="card location-card"><div class="section-head"><div><h2>Location</h2><p>Browser GPS location is used only after permission.</p></div><span class="badge neutral" id="locationBadge">Off</span></div>
+      <button class="btn primary" id="allowLocation">📍 Allow Location</button><div id="locationDetails" class="location-details">Location has not been shared.</div>
+      <div class="manual"><input id="manualLoc" placeholder="Or type address / paste Google Maps link / lat,lng"><button class="btn secondary" id="setManualLoc">Use this location</button></div>
+    </section>
+  </div>
+
+  <section class="card emergency-card"><div class="section-head"><div><h2>Report an Emergency</h2><p>Select what is happening. VERAS will prepare the relevant response information.</p></div><span class="incident-pill" id="incidentPill">No active incident</span></div>
+    <div class="emergency-grid">
+      <button class="emergency fire" data-type="Fire"><span>🔥</span><b>Fire</b><small>Fire & rescue</small></button>
+      <button class="emergency crime" data-type="Crime"><span>🚨</span><b>Crime</b><small>Police & women safety</small></button>
+      <button class="emergency accident" data-type="Accident"><span>🚑</span><b>Accident</b><small>Ambulance & hospitals</small></button>
+      <button class="emergency medical" data-type="Medical Emergency"><span>🏥</span><b>Medical Emergency</b><small>Urgent medical help</small></button>
+      <button class="emergency other" data-type="Other"><span>🆘</span><b>Other</b><small>Emergency response</small></button>
+    </div>
+  </section>
+
+  <section id="reportSection" class="card hidden"><div class="section-head"><div><h2>Incident Report</h2><p>Review the information before sending it.</p></div><span class="badge danger" id="priorityBadge">HIGH</span></div>
+    <div id="reportGrid" class="report-grid"></div>
+    <div class="report-actions"><button class="btn primary" id="sendReport">✉ Send Report</button><button class="btn secondary" id="copyReport">Copy Report</button><button class="btn ghost" id="closeReport">Close</button></div>
+  </section>
+
+  <section id="contactsSection" class="card hidden"><div class="section-head"><div><h2 id="contactsTitle">Emergency Contacts</h2><p>Verified public emergency contacts shown by incident type.</p></div></div><div id="contactsList" class="contacts-list"></div></section>
+
+  <section class="card"><div class="section-head"><div><h2>Incident Timeline</h2><p>Activity recorded in this browser prototype.</p></div></div><div id="timeline" class="timeline"><div class="empty">No incidents yet.</div></div></section>
+</main>
+<div id="fb" class="hidden"></div>
+<div id="reportModal" class="modal hidden"><div class="sheet"><button class="btn ghost rd-x" id="rdX">✕</button><div id="reportDoc"></div></div></div>
+<footer>VERAS is a hackathon prototype. It does not replace official emergency dispatch systems.</footer>
+</section>
+<script>
+const LS=(()=>{try{const k='__t';localStorage.setItem(k,'1');localStorage.removeItem(k);return localStorage}catch(e){window.MEMSTORE=true;const m={};return{getItem:k=>k in m?m[k]:null,setItem:(k,v)=>{m[k]=String(v)},removeItem:k=>{delete m[k]}}}})();
+const state={user:null,location:null,currentIncident:null};
+const contacts={
+ Crime:[['Police Emergency','112','dgpcontrol-up@nic.in'],['UP Women Power Line','1090','uppmsp-up@gov.in'],['Women Helpline','181','']],
+ Accident:[['Emergency Response','112','dgpcontrol-up@nic.in'],['Ambulance','108','']],
+ Fire:[['Fire Brigade','101','fshq@nic.in'],['Emergency Response','112','dgpcontrol-up@nic.in']],
+ 'Medical Emergency':[['Emergency Response','112','dgpcontrol-up@nic.in'],['Ambulance','108','']],
+ Other:[['Emergency Response','112','dgpcontrol-up@nic.in']]
+};
+const $=id=>document.getElementById(id); const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function toast(msg){$('toast').textContent=msg;$('toast').classList.add('show');setTimeout(()=>$('toast').classList.remove('show'),2600)}
+$('logoutBtn').onclick=()=>{state.user=null;state.currentIncident=null;$('reportModal').classList.add('hidden');$('appPage').classList.add('hidden');$('reportSection').classList.add('hidden');$('contactsSection').classList.add('hidden');$('loginPage').classList.remove('hidden');$('loginPassword').value='';setMode('login')};
+function loadProfile(){const p=JSON.parse(LS.getItem(pk())||'{}');['Name','Phone','Email','Contact','Info'].forEach(k=>{const id='profile'+k;if(p[k])$(id).value=p[k]});if(p.Consent)$('consent').checked=true;updateConsent();}
+$('saveProfile').onclick=()=>{const p={Name:$('profileName').value,Phone:$('profilePhone').value,Email:$('profileEmail').value,Contact:$('profileContact').value,Info:$('profileInfo').value,Consent:$('consent').checked};LS.setItem(pk(),JSON.stringify(p));state.user.name=p.Name||'VERAS User';state.user.phone=p.Phone;state.user.email=p.Email;updateConsent();toast('Emergency profile saved.');}
+$('consent').onchange=updateConsent;function updateConsent(){$('consentBadge').textContent=$('consent').checked?'Consent given':'Consent pending';$('consentBadge').className='badge '+($('consent').checked?'':'neutral')}
+function incidentId(){return 'VERAS-'+new Date().toISOString().replace(/[-:TZ.]/g,'').slice(0,14)+'-'+Math.floor(100+Math.random()*900)}
+document.querySelectorAll('.emergency').forEach(b=>b.onclick=()=>makeIncident(b.dataset.type));
+$('sendReport').onclick=()=>sendReportTo('');$('copyReport').onclick=async()=>{await navigator.clipboard.writeText(reportText());toast('Report copied.');};$('closeReport').onclick=()=>{$('reportSection').classList.add('hidden');$('contactsSection').classList.add('hidden')};
+function addTimeline(title,detail){const box=$('timeline');if(box.querySelector('.empty'))box.innerHTML='';const d=document.createElement('div');d.className='timeline-item';d.innerHTML=`<b>${esc(title)}</b><small>${esc(detail)} · ${new Date().toLocaleTimeString()}</small>`;box.prepend(d)}
+
+/* ===== AUTH: Register + Login ===== */
+const pk=()=>'verasProfile_'+(state.user?state.user.id:'guest');
+const users=()=>JSON.parse(LS.getItem('verasUsers')||'[]');
+const saveUsers=u=>LS.setItem('verasUsers',JSON.stringify(u));
+const normId=s=>{s=s.trim().toLowerCase();return s.includes('@')?s:s.replace(/\D/g,'').slice(-10)};
+const validEmail=e=>/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(e);
+const validPhone=p=>p.replace(/\D/g,'').length>=10;
+const findUser=id=>{const n=normId(id);return users().find(u=>u.email===n||u.phone===n)};
+async function hashPw(pw){try{const b=await crypto.subtle.digest('SHA-256',new TextEncoder().encode('veras:'+pw));return [...new Uint8Array(b)].map(x=>x.toString(16).padStart(2,'0')).join('')}catch(e){return btoa(unescape(encodeURIComponent('veras:'+pw)))}}
+function msg(t,ok){const m=$('authMsg');m.textContent=t||'';m.classList.toggle('hidden',!t);m.style.background=ok?'#ecfdf5':'#fff7ed';m.style.color=ok?'#166534':'#9a3412'}
+function setMode(m){$('tabLogin').classList.toggle('active',m==='login');$('tabRegister').classList.toggle('active',m==='register');$('authSub').textContent=m==='login'?'Sign in to access emergency assistance.':'Create your VERAS account.';$('loginForm').classList.toggle('hidden',m!=='login');$('registerForm').classList.toggle('hidden',m!=='register');msg('')}
+$('tabLogin').onclick=()=>setMode('login');$('tabRegister').onclick=()=>setMode('register');
+$('loginForm').addEventListener('submit',async e=>{e.preventDefault();try{const u=findUser($('loginId').value);
+ if(!u||!u.pw){setMode('register');msg('No account found. Please register first.');return}
+ if(u.pw!==await hashPw($('loginPassword').value))return (toast('Wrong password'),msg('Wrong password. Please try again.'));
+ enterApp(u)}catch(err){msg('Login error: '+err.message)}});
+$('registerForm').addEventListener('submit',async e=>{e.preventDefault();const name=$('regName').value.trim(),phone=normId($('regPhone').value),email=normId($('regEmail').value),pw=$('regPassword').value;
+ if(!name)return msg('Please enter your name.');if(!validPhone($('regPhone').value))return msg('Enter a valid 10-digit phone number.');if(!validEmail(email))return msg('Enter a valid email address.');if(pw.length<6)return msg('Password must be at least 6 characters.');
+ saveUsers(users().filter(x=>x.pw));if(findUser(phone)||findUser(email)){setMode('login');msg('Already registered. Please login.');return}
+ const u={id:'u'+Date.now(),name,phone,email,pw:await hashPw(pw)};saveUsers([...users(),u]);toast('Registration successful!');enterApp(u)});
+function enterApp(u){state.user={id:u.id,name:u.name,phone:u.phone,email:u.email};if(!LS.getItem(pk()))LS.setItem(pk(),JSON.stringify({Name:u.name,Phone:u.phone,Email:u.email}));
+ $('loginPage').classList.add('hidden');$('appPage').classList.remove('hidden');$('userName').textContent=u.name;loadProfile()}
+
+(async()=>{try{if(!findUser('demo@veras.com'))saveUsers([...users().filter(x=>x.pw),{id:'udemo',name:'Demo User',phone:'9000000000',email:'demo@veras.com',pw:await hashPw('demo123')}])}catch(e){}})();
+$('demoBtn').onclick=()=>{$('loginId').value='demo@veras.com';$('loginPassword').value='demo123';$('loginForm').requestSubmit()};
+setMode('login');if(window.MEMSTORE)msg('Browser storage is blocked here, so accounts last only until you close this page. Open the file in Chrome/Safari for permanent accounts.');
+
+/* ===== LOCATION ===== */
+const accTxt=l=>l.accuracy==='manual'?'Entered manually':`Accuracy: about ${l.accuracy} m`;
+function locLabel(){const l=state.location;if(!l)return 'Not shared';return l.lat!=null?`${l.lat.toFixed(6)}, ${l.lon.toFixed(6)}`:l.address}
+function mapLink(){const l=state.location;if(!l)return '';if(l.url)return l.url;return l.lat!=null?`https://www.google.com/maps?q=${l.lat},${l.lon}`:`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(l.address)}`}
+function hospLink(){const l=state.location;return 'https://www.google.com/maps/search/hospitals'+(l&&l.lat!=null?`/@${l.lat},${l.lon},14z`:'')}
+function setLocUI(){const l=state.location;$('locationStatus').textContent=l?'Location added':'Location not allowed';$('locationBadge').textContent=l?'On':'Off';$('locationBadge').className='badge '+(l?'':'neutral');
+ $('locationDetails').innerHTML=l?(l.lat!=null?`Latitude: ${l.lat.toFixed(6)}<br>Longitude: ${l.lon.toFixed(6)}<br>${accTxt(l)}`:`Address: ${esc(l.address)}`)+`<br><a href="${esc(mapLink())}" target="_blank" rel="noopener">Open in Google Maps</a>`:'Location has not been shared.'}
+function getGPS(quiet){return new Promise(res=>{if(!navigator.geolocation){if(!quiet)toast('GPS not available here. Paste your location in the box below.');return res(false)}
+ navigator.geolocation.getCurrentPosition(pos=>{state.location={lat:pos.coords.latitude,lon:pos.coords.longitude,accuracy:Math.round(pos.coords.accuracy)};setLocUI();if(!quiet)toast('Location added.');res(true)},
+ err=>{if(!quiet)toast(err.code===1?'GPS blocked. Allow location in browser settings or paste your location below.':'GPS unavailable. Paste your location below.');res(false)},{enableHighAccuracy:true,timeout:10000,maximumAge:60000})})}
+$('allowLocation').onclick=()=>getGPS(false);
+$('setManualLoc').onclick=()=>{const t=$('manualLoc').value.trim();if(!t)return toast('Enter an address, Maps link or lat,lng.');const m=t.match(/(-?\d{1,2}\.\d+)\s*,\s*(-?\d{1,3}\.\d+)/);
+ state.location=m?{lat:+m[1],lon:+m[2],accuracy:'manual'}:(/^https?:\/\//i.test(t)?{address:t,url:t}:{address:t});setLocUI();toast('Location added.')};
+/* ===== INCIDENT REPORT ===== */
+const prof=()=>{const p=JSON.parse(LS.getItem(pk())||'{}'),u=state.user||{};return{name:p.Name||u.name||'',phone:p.Phone||u.phone||'',email:p.Email||u.email||'',contact:p.Contact||'',info:p.Info||''}};
+async function makeIncident(type){toast('Preparing your report…');if(!state.location)await getGPS(true);
+ const priority=['Crime','Fire','Accident','Medical Emergency'].includes(type)?'HIGH':'NORMAL';state.currentIncident={id:incidentId(),type,priority,created:new Date().toLocaleString()};
+ $('incidentPill').textContent=state.currentIncident.id;addTimeline(`Report generated — ${type}`,state.currentIncident.id);openReport()}
+function reportText(){const i=state.currentIncident,p=prof(),n='Not provided';return ['🚨 VERAS EMERGENCY REPORT','','Incident ID: '+i.id,'Emergency Type: '+i.type,'Priority: '+i.priority,'Time: '+i.created,'','REPORTER DETAILS','Name: '+(p.name||n),'Phone: '+(p.phone||n),'Email: '+(p.email||n),'Emergency Contact: '+(p.contact||n),'Medical / Basic Info: '+(p.info||n),'','LOCATION',locLabel(),'Google Maps: '+(mapLink()||'Not shared'),'','Sent via VERAS (hackathon prototype, not official dispatch).'].join('\n')}
+function openReport(){const i=state.currentIncident,p=prof(),T=i.type,body=encodeURIComponent(reportText()),subj=encodeURIComponent('VERAS Emergency Report — '+i.id),loc=state.location;
+ const row=(k,v)=>`<div class="rd-row"><small>${k}</small><b>${v?esc(v):'<i>Not provided</i>'}</b></div>`;const list=contacts[T]||contacts.Other;
+ const ec=p.contact,dg=ec.replace(/\D/g,'');
+ const ecBtns=!ec?'':ec.includes('@')?`<a class="btn secondary" target="_blank" rel="noopener" href="mailto:${esc(ec)}?subject=${subj}&body=${body}" data-log="Emailed emergency contact">✉ My Contact</a>`:dg.length>=10?`<a class="btn secondary" href="tel:${dg}" data-log="Called emergency contact">📞 My Contact</a><a class="btn secondary" href="sms:${dg}?body=${body}" data-log="SMS to emergency contact">💬 SMS</a>`:'';
+ $('reportDoc').innerHTML=`<div class="rd-head"><div><span class="t">VERAS INCIDENT REPORT</span><h2>${esc(T)}</h2><small>${esc(i.id)} · ${esc(i.created)}</small></div><span class="badge ${i.priority==='HIGH'?'danger':''}">${i.priority}</span></div>
+<h3>👤 Reporter Details</h3><div class="rd-grid">${row('Name',p.name)}${row('Phone',p.phone)}${row('Email',p.email)}${row('Emergency Contact',p.contact)}</div>${p.info?`<div class="rd-row wide"><small>Medical / Basic Info</small><b>${esc(p.info)}</b></div>`:''}
+<h3>📍 Location</h3>${loc?`<div class="rd-row wide"><small>${loc.lat!=null?'Coordinates':'Address'}</small><b>${esc(locLabel())}</b></div><a class="btn secondary" target="_blank" rel="noopener" href="${esc(mapLink())}" data-log="Opened Google Maps">🗺 Open in Google Maps</a>`:'<div class="notice">Location not shared. Close this, tap Allow Location or paste your address, then create the report again.</div>'}
+<h3>📞 Contact Emergency Services</h3><div class="contacts-list">${list.map(([n,ph,em])=>`<div class="contact"><div class="contact-info"><b>${esc(n)}</b><span>📞 ${esc(ph)}${em?' · ✉ '+esc(em):''}</span></div><div class="contact-actions"><a class="btn primary" href="tel:${esc(ph)}" data-log="Call ${esc(n)} (${esc(ph)})">📞 Call</a>${em?`<a class="btn secondary" target="_blank" rel="noopener" href="mailto:${esc(em)}?subject=${subj}&body=${body}" data-log="Emailed report to ${esc(em)}">✉ Email Report</a>`:''}</div></div>`).join('')}${T==='Accident'||T==='Medical Emergency'?`<div class="contact"><div class="contact-info"><b>Nearby Hospitals</b><span>Opens Google Maps near your location.</span></div><div class="contact-actions"><a class="btn secondary" target="_blank" rel="noopener" href="${esc(hospLink())}" data-log="Searched nearby hospitals">🏥 Find Nearby</a></div></div>`:''}</div>
+<h3>🔗 Share this report</h3><div class="report-actions"><a class="btn secondary" target="_blank" rel="noopener" href="mailto:?subject=${subj}&body=${body}" data-log="Report email opened">✉ Email</a><a class="btn secondary" target="_blank" rel="noopener" href="https://wa.me/${dg.length>=10?'91'+dg.slice(-10):''}?text=${body}" data-log="Report shared on WhatsApp">WhatsApp</a>${ecBtns}<button class="btn ghost" id="rdCopy">Copy</button><button class="btn ghost" id="rdClose">Close</button></div>
+<p class="demo">VERAS is a hackathon prototype and does not replace official emergency dispatch. In real danger, call 112 directly.</p>`;
+ $('reportModal').classList.remove('hidden');$('reportModal').scrollTop=0}
+async function copyReport2(){const t=reportText();try{await navigator.clipboard.writeText(t)}catch(e){const a=document.createElement('textarea');a.value=t;document.body.appendChild(a);a.select();try{document.execCommand('copy')}catch(_){}a.remove()}toast('Report copied.')}
+$('reportDoc').addEventListener('click',e=>{const t=e.target.closest('[data-log],#rdCopy,#rdClose');if(!t)return;if(t.id==='rdCopy')copyReport2();else if(t.id==='rdClose')$('reportModal').classList.add('hidden');else addTimeline(t.dataset.log,state.currentIncident.id)});
+$('rdX').onclick=()=>{$('reportModal').classList.add('hidden');$('fb').classList.add('hidden')};
+
+/* ===== Fallback when call/email link is blocked ===== */
+function showFallback(href){const fb=$('fb');let big='',btns='';
+ if(href.startsWith('tel:')){big=decodeURIComponent(href.slice(4));btns=`<button class="btn primary" data-copy="${esc(big)}">Copy number</button>`}
+ else if(href.startsWith('mailto:')){big=decodeURIComponent(href.slice(7).split('?')[0])||'(choose recipient in your mail app)';btns=(big.includes('@')?`<button class="btn primary" data-copy="${esc(big)}">Copy email</button>`:'')+`<button class="btn secondary" data-copy="__report">Copy report</button>`}
+ else{big='SMS';btns='<button class="btn secondary" data-copy="__report">Copy report</button>'}
+ fb.innerHTML=`<p>Didn't open? Your viewer may block it. Use this instead:</p><div class="big">${esc(big)}</div><div class="row">${btns}<button class="btn ghost" data-copy="__close">Close</button></div>`;fb.classList.remove('hidden')}
+$('fb').addEventListener('click',async e=>{const b=e.target.closest('[data-copy]');if(!b)return;const v=b.dataset.copy;if(v==='__close'){$('fb').classList.add('hidden');return}
+ const t=v==='__report'?reportText():v;try{await navigator.clipboard.writeText(t)}catch(_){const a=document.createElement('textarea');a.value=t;document.body.appendChild(a);a.select();try{document.execCommand('copy')}catch(__){}a.remove()}toast('Copied.')});
+$('reportDoc').addEventListener('click',e=>{const a=e.target.closest('a[href^="tel:"],a[href^="mailto:"],a[href^="sms:"]');if(!a)return;const href=a.getAttribute('href');
+ setTimeout(()=>{if(document.visibilityState==='visible'&&document.hasFocus())showFallback(href)},900)});
+</script>
+</body></html>
